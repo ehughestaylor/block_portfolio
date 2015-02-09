@@ -162,16 +162,15 @@ BUTTON STYLES AND POSITIONING
 	font-family: 'Ubuntu', serif;
 	background-color: #B87E13;
 	border: none;
-	color: #21436C;
+	color: white;
 	transition-duration:.4s;
 }
 .button_front:hover,
 .button_back:hover{
 	background-color: #B87E13;
 	border: none;
-	color: white;
+	color: #21436C;
 	transition-duration: .4s;
-	width: 12.3em;
 	letter-spacing: 0.2em;
 }
 
@@ -179,13 +178,7 @@ BUTTON STYLES AND POSITIONING
 BLOCK COLORS
 *******************/
 
-#welcome{
-	background-color: #21436C;
-}
-#prof_pic{
-	background-color: white;
-	left: 48.7%;
-}
+
 .front > h1{
 	text-align: center;
 	font-size: 3.0em;
@@ -196,7 +189,13 @@ BLOCK COLORS
 }
 
 
-
+#welcome{
+	background-color: #21436C;
+}
+#prof_pic{
+	background-color: white;
+	left: 48.7%;
+}
 
 #about_me{
 	background-color: white; 
@@ -217,33 +216,61 @@ BLOCK COLORS
 	left: 48.7%;
 }
 
-.text {
-	width: 50%;
-	text-align: center;
-	margin: 8em auto 0;
+.top_text,
+.middle_text,
+.bottom_text {
 	color: white;
-	font-family: sans-serif;
-}
-.text h1 {
-	font-size: 6.4em;
-/*	font-family: 'Droid Sans', sans-serif;*/
 	font-family: 'Ubuntu', sans-serif;
-/*	font-family: 'Bitter', serif;*/
-/*	font-family: 'Roboto Slab', serif;*/
+}
+.top_text h1 {
+	font-size: 6.4em;
+	text-align: center;
+	position: absolute;
+	top: 40%;
+	left: 19%;
+}
+.top_text .hi {
+	position: absolute;
+	top: 11%;
+	left: 10%;
+	font-size: 4em;
+	color: #7BEB78
 }
 
-/
+.middle_text>h2 {
+	font-size: 2.4em;
+	position: absolute;
+	left: 50%;
+	top: 2%;
+	color: #21436C;
+}
+.middle_text > h1 {
+	position: absolute;
+	font-size: 4.4em;
+	top: 28.9%;
+	left: 13%;
+}
+.bottom_text>h2 {
+	font-size: 2.4em;
+	position: absolute;
+	left: 20%;
+	top: 2%;
+	color: #00E9C1;
+}
+.bottom_text > h1 {
+	position: absolute;
+	font-size: 4.4em;
+	top: 28.9%;
+	left: 13%;
+}
+
+
+
+
+
 /*QUERIES */
 @media only screen and (max-width : 767px) {
-	div.flip3D { 
-		height: 100%;
-	}
-	div.flip3D > .front{
-		height: 100%;
-	}
-	div.flip3D > .{
-		height: 100%;
-	}
+	
 }
 
 
