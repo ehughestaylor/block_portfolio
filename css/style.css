@@ -1,0 +1,189 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*START*/
+
+div.container{
+	width: 100%;
+	padding: 0;
+	height: 1000px;
+	background-color: lightblue;
+	overflow: none;
+	margin: 0 1%;
+	-webkit-perspective:800px;
+	perspective:800px;
+	margin-left: 0;
+	padding-left: 0;
+}
+div.block{
+	width: 51%;
+	/* margin: 0 0; */
+	height: 300px;
+	/* margin-left: 1%; */
+	/* margin-right: -1.9%; */
+	position: absolute;
+	/* background-color: blue; */
+	display: inline-block;
+}
+div.flip3D{
+	width: 100%; 
+	height: 300px;
+}
+.flip3D > .front{
+	position: absolute;
+	-webkit-transform: perspective(600px) rotateY(0deg);
+	transform: perspective(600px) rotateY(0deg);
+	width: 100%;
+	height: 300px;
+	-webkit-backface-visibility:hidden;
+	backface-visibility: hidden;
+	transition:-webkit-transform .5s linear 0s;
+	transition:transform .5s linear 0s;
+}
+.flip3D > .back{
+	position: absolute;
+	-webkit-transform: perspective(600px) rotateY(180deg);
+	transform: perspective(600px) rotateY(180deg);
+	width: 100%;
+	height: 300px;
+	border-radius: 8px;
+	-webkit-backface-visibility:hidden;
+	backface-visibility: hidden;
+	transition:-webkit-transform .5s linear 0s;
+	transition:transform .5s linear 0s;
+}
+/*.flipper_front{
+	-webkit-transform: perspective(600px) rotateY(-180deg);
+	transform: perspective(600px) rotateY(-180deg);
+}*/
+
+/*SECTION POSITIONING AND COLOR*/
+#top > .front {
+	background-color: #6C6969;
+}
+#top > .back {
+
+}
+#middle >.front{
+	background-color: #7BEB78;
+	top: 30%;
+}
+#middle >.back {
+	top: 30%;
+}
+#bottom >.front {
+	background-color: #21436C;
+	top: 60%;
+}
+#bottom >.back {
+	top: 60%;
+}
+
+/*****************************
+BUTTON STYLES AND POSITIONING
+******************************/
+
+.button_front{
+	top: 50%;
+	position: absolute;
+	/* right: 77%; */
+	left: -4em;
+	font-size: 1.4em;
+	width: 10.3em;
+	transform: rotate(-90deg);
+}
+.button_back {
+	top: 50%;
+	position: absolute;
+	/* right: 77%; */
+	transform: rotate(90deg);
+	font-size: 1.4em;
+	width: 10.3em;
+	right: -3em;
+}
+
+
+#welcome{
+	background-color: #21436C;
+}
+#prof_pic{
+	background-color: white;
+	left: 48.7%;
+}
+.front > h1,
+.front >h3{
+	text-align: center;
+	margin-top: 3em;
+	font-size: 3em;
+}
+
+
+
+
+#about_me{
+	background-color: white; 
+/*	top: 42.7%;*/
+}
+#portfolio{
+	background-color: #6C6969; /*GRAY*/
+/*	top: 42.7%;*/
+	left: 48.7%;
+}
+#social{
+	background-color: #00E9C1; /*LIGHTBLUE*/
+/*	top: 86%;*/
+}
+#contact{
+	background-color: white;
+/*	top: 86%;*/
+	left: 48.7%;
+}
+
+
+
