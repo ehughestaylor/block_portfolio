@@ -70,10 +70,6 @@ div.flip3D{
 	height: 33%;
 }
 
-/*@media only screen and (max-width : 320px) {
-
-}*/
-
 .flip3D > .front{
 	position: absolute;
 	-webkit-transform: perspective(600px) rotateY(0deg);
@@ -97,20 +93,6 @@ div.flip3D{
 	transition:-webkit-transform .5s linear 0s;
 	transition:transform .5s linear 0s;
 }
-
-@media and (max-width : 480px) {
-	div.flip3D { 
-		height: 100%;
-	}
-	div.flip3D > .front{
-		height: 100%;
-	}
-	div.flip3D > .back{
-		height: 100%;
-	}
-
-}
-
 div.block{
 	width: 51%;
 	/* margin: 0 0; */
@@ -250,5 +232,18 @@ BLOCK COLORS
 /*	font-family: 'Roboto Slab', serif;*/
 }
 
+/
+/*QUERIES */
+@media only screen and (max-width : 767px) {
+	div.flip3D { 
+		height: 100%;
+	}
+	div.flip3D > .front{
+		height: 100%;
+	}
+	div.flip3D > .{
+		height: 100%;
+	}
+}
 
 
