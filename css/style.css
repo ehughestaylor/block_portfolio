@@ -69,6 +69,11 @@ div.flip3D{
 	width: 100%; 
 	height: 33%;
 }
+
+/*@media only screen and (max-width : 320px) {
+
+}*/
+
 .flip3D > .front{
 	position: absolute;
 	-webkit-transform: perspective(600px) rotateY(0deg);
@@ -92,6 +97,20 @@ div.flip3D{
 	transition:-webkit-transform .5s linear 0s;
 	transition:transform .5s linear 0s;
 }
+
+@media and (max-width : 480px) {
+	div.flip3D { 
+		height: 100%;
+	}
+	div.flip3D > .front{
+		height: 100%;
+	}
+	div.flip3D > .back{
+		height: 100%;
+	}
+
+}
+
 div.block{
 	width: 51%;
 	/* margin: 0 0; */
@@ -143,6 +162,7 @@ BUTTON STYLES AND POSITIONING
 	width: 10.3em;
 	-webkit-transform:rotate(-90deg);
 	transform: rotate(-90deg);
+	cursor: pointer;
 }
 .button_back {
 	top: 50%;
@@ -153,8 +173,29 @@ BUTTON STYLES AND POSITIONING
 	font-size: 1.4em;
 	width: 10.3em;
 	right: -3em;
+	cursor: pointer;
+}
+.button_front,
+.button_back{
+	font-family: 'Ubuntu', serif;
+	background-color: #B87E13;
+	border: none;
+	color: #21436C;
+	transition-duration:.4s;
+}
+.button_front:hover,
+.button_back:hover{
+	background-color: #B87E13;
+	border: none;
+	color: white;
+	transition-duration: .4s;
+	width: 12.3em;
+	letter-spacing: 0.2em;
 }
 
+/******************
+BLOCK COLORS
+*******************/
 
 #welcome{
 	background-color: #21436C;
@@ -192,6 +233,21 @@ BUTTON STYLES AND POSITIONING
 	background-color: white;
 /*	top: 86%;*/
 	left: 48.7%;
+}
+
+.text {
+	width: 50%;
+	text-align: center;
+	margin: 8em auto 0;
+	color: white;
+	font-family: sans-serif;
+}
+.text h1 {
+	font-size: 6.4em;
+/*	font-family: 'Droid Sans', sans-serif;*/
+	font-family: 'Ubuntu', sans-serif;
+/*	font-family: 'Bitter', serif;*/
+/*	font-family: 'Roboto Slab', serif;*/
 }
 
 
