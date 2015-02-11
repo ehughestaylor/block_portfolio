@@ -49,8 +49,23 @@ table {
 
 /*START*/
 body{
-	height: 2000px;
+	height: 1500px;
 }
+/*iphone*/
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px) {
+	body{
+		height: 2000px;
+	}
+}
+
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px) and (orientation : portrait) {
+	body {
+		height: 2500px;
+		font-size: 1.4em;
+	}
+}
+	
+
 
 div.container{
 	width: 100%;
