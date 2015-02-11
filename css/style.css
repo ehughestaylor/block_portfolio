@@ -210,21 +210,57 @@ BLOCK COLORS
 /*******************************
 TOP STYLESBLOCKS
 *******************************/
+.prof {
+	height: 50%;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+.prof > img {
+	height: 100%;
+}
+#prof_pic{
+	background-color: #6C6969;
+	left: 48.7%;
+	max-width: 100%;
+	height: 100%;
+}
 .interests{
 	background: #7BEB78;
-	height: 100%;
-	width: 50%;
-	top: 0;
+	height: 50%;
+	width: 100%;
 	right: 0;
 	position: absolute;
 }
-.interests ul > li{
-	color: white;
-	font-size: 2.3em;
-	margin: 0 auto;
+
+.interests ul {
+	position: absolute;
+	top: 15px;
 	text-align: center;
-	margin-top: 0.3em;
+	width: 100%;
+	height: 70%;
 }
+
+.icons> li{
+	color: white;
+	font-size: 3.3em;
+	margin: 0 auto;
+	width: 20%;
+	display: inline-block;
+	margin-bottom: 0.5em;
+}
+
+@media only screen and (max-width : 680px){
+	.interests ul {
+		top: 0;
+	}
+	.icons > li {
+		font-size: 2.3em;
+		margin-bottom: 1em;
+		margin-top: 0.4em;
+	}
+}
+
 .buddy{
 	position: absolute;
 	top: 30%;
@@ -236,25 +272,11 @@ TOP STYLESBLOCKS
 	font-size: 0.7em;
 }
 
-#prof_pic{
-	background-color: #6C6969;
-	left: 48.7%;
-	max-width: 100%;
-	height: 100%;
-}
-#prof_pic > img {
-	position: absolute;
-	top: 0;
-	left: 0;
-	min-height: 50%;
-	max-height: 100%;
-	width: 50%;
-}
 @media only screen and (max-width : 780px) {
-	#prof_pic > img {
+/*	#prof_pic > img {
 		top: 13%;
 		width: 65%;
-	}
+	}*/
 }
 #welcome{
 	background-color: #21436C;
@@ -353,14 +375,48 @@ BOTTOM STYLES BLOCKS
 	color: white;
 	font-family: 'Ubuntu', sans-serif;
 	font-size: 1.4em;
+	text-align: center;
+	top: 0%;
+	padding-top: 1%;
 /*	top: 42.7%;*/
 }
 
 #portfolio{
-	background-color: #6C6969; /*GRAY*/
+	background-color: white; /*GRAY*/
 /*	top: 42.7%;*/
 	left: 48.7%;
+	top: 0%;
+	padding-top: 1%;
+	text-align: center;
 }
+div.proj {
+	height: 48%;
+	/* position: absolute; */
+	bottom: 0;
+	display: inline-block;
+	width: 48%;
+	background-color: white;
+}
+
+.proj > img {
+	height: 100%;
+	width: 100%;
+}
+@media only screen and (max-width : 745px) {
+	div.proj {
+		max-height: 24%;
+	}
+	#about_me,
+	#portfolio {
+		padding-top: 20%;
+	}
+}
+
+/*for media query add max-height of 24% for proj*/
+
+
+/*BOTTOM BLOCKS*/
+
 #social{
 	background-color: #2668B8; /*LIGHTBLUE*/
 /*	top: 86%;*/
@@ -420,8 +476,6 @@ BOTTOM STYLES BLOCKS
 }
 
 /*QUERIES */
-@media only screen and (max-width : 767px) {
-	
-}
+
 
 
