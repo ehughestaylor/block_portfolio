@@ -5,7 +5,7 @@
 	<title>Home</title>
 	<link href='http://fonts.googleapis.com/css?family=Droid+Sans|Ubuntu|Bitter|Roboto+Slab' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/style.css">
-
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 </head>
 <body>
 	<div class="container">
@@ -20,6 +20,34 @@
 				</div>
 				<div id="prof_pic"class="block">
 					<img src="img/prof.jpg" alt="">
+					<div class="interests">
+						<ul class="icons">
+							<li>
+								<i class="fa fa-code"></i>
+									<p class="buddy">I love to code.</p>
+							</li>
+							<li>
+								<i class="fa fa-css3"></i>
+								<p class="buddy">I am good at css.</p>
+							</li>
+							<li>
+								<i class="fa fa-apple"></i>
+								<p class="buddy">apple.</p>
+							</li>
+							<li>
+								<i class="fa fa-html5"></i>
+								<p class="buddy">&lt;html&gt;is&lt;cool/&gt;</p>
+
+							</li>
+							<li>
+								<i class="fa fa-bicycle bike"></i>
+								<p class="buddy">I bike.</p>
+							</li>
+							<li><i class="fa fa-gamepad"></i><p class="buddy">I game.</p></li>
+							<li><i class="fa fa-paw"></i><p class="buddy">This is my dog.</p></li>
+							<li><i class="fa fa-rebel"></i><p class="buddy">Rebel.</p></li>
+						</ul>
+					</div>
 				</div>
 				<button class="button_back top_back" onclick="flipBack(this.parentNode.parentNode)">
 					go back!
@@ -37,8 +65,8 @@
 		</div>
 		<div id="middle" class="flip3D">
 			<div class="back">
-				<div id="about_me"class="block">ABOUT</div>
-				<div id="portfolio"class="block">PORTFOLIO</div>
+				<div id="about_me"class="block"></div>
+				<div id="portfolio"class="block"></div>
 				<button class="button_back mid_button" onclick="flipBack(this.parentNode.parentNode)">push to flip!</button>
 			</div>
 			<div class="front">
@@ -51,8 +79,17 @@
 		</div>
 		<div id="bottom" class="flip3D">
 			<div class="back">
-				<div id="social"class="block"> SOCIAL</div>
-				<div id="contact"class="block"> CONTACT</div>
+				<div id="social"class="block"> 
+					<div class="media">
+						<ul>
+							<li><i class="fa fa-facebook"></i></li>
+							<li><i class="fa fa-github"></i></li>
+							<li><i class="fa fa-linkedin"></i></li>
+							<li><i class="fa fa-envelope-o"></i></li>
+						</ul>
+					</div>
+				</div>
+				<div id="contact"class="block"></div>
 				<button class="button_back bot_button" onclick="flipBack(this.parentNode.parentNode)">push to flip!</button>
 			</div>
 			<div class="front">
@@ -60,7 +97,9 @@
 					<h2>want to get a hold of me?</h2>
 					<h1>contact info here</h1>
 				</div>
-				<button class="button_front bot_button" onclick="flip(this.parentNode.parentNode)">contact</button>
+				<button class="button_front bot_button" onclick="flip(this.parentNode.parentNode)">
+				contact
+				</button>
 			</div>
 		</div>
 	</div>
