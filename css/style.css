@@ -371,7 +371,7 @@ BOTTOM STYLES BLOCKS
 
 /*MIDDLE BACK BLOCKS*/
 #about_me{
-	background-color: white; 
+	background-color:#2668B8 ;
 	color: white;
 	font-family: 'Ubuntu', sans-serif;
 	font-size: 1.4em;
@@ -382,7 +382,7 @@ BOTTOM STYLES BLOCKS
 }
 
 #portfolio{
-	background-color: white; /*GRAY*/
+	background-color: #2668B8; /*GRAY*/
 /*	top: 42.7%;*/
 	left: 48.7%;
 	top: 0%;
@@ -402,9 +402,9 @@ div.proj {
 	height: 100%;
 	width: 100%;
 }
-@media only screen and (max-width : 745px) {
+@media only screen and (max-width : 850px) {
 	div.proj {
-		max-height: 24%;
+		max-height: 30%;
 	}
 	#about_me,
 	#portfolio {
