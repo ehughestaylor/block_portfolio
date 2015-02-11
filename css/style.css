@@ -54,14 +54,14 @@ body{
 /*iphone*/
 @media only screen and (min-device-width : 375px) and (max-device-width : 667px) {
 	body{
-		height: 2000px;
+		height: 1800px;
 	}
 }
 
 @media only screen and (min-device-width : 375px) and (max-device-width : 667px) and (orientation : portrait) {
 	body {
 		height: 2500px;
-		font-size: 1.4em;
+		font-size: 1.2em;
 	}
 }
 	
@@ -263,8 +263,8 @@ TOP STYLESBLOCKS
 
 .buddy{
 	position: absolute;
-	top: 30%;
-	right: 50%;
+	bottom: -98%;
+	right: 0%;
 	background: #6C6969;
 	padding: 1em;
 	font-family: 'Ubuntu', sans-serif;
@@ -272,11 +272,14 @@ TOP STYLESBLOCKS
 	font-size: 0.7em;
 }
 
-@media only screen and (max-width : 780px) {
-/*	#prof_pic > img {
-		top: 13%;
-		width: 65%;
-	}*/
+@media only screen and (max-width : 680px) {
+	.buddy {
+	font-size: 0.3em;
+	/* transform: rotate(90deg); */
+	bottom: 45%;
+	right: 35%;
+	position: absolute;
+	}
 }
 #welcome{
 	background-color: #21436C;
@@ -351,7 +354,6 @@ BOTTOM STYLES BLOCKS
 	color: black;
 }
 
-
 /*
 #welcome > h1 {
 	font-size: 3.5em;
@@ -425,6 +427,23 @@ div.proj {
 	background-color: white;
 /*	top: 86%;*/
 	left: 48.7%;
+}
+
+#contact > .text {
+	font-family: 'Ubuntu', sans-serif;
+	text-align: center;
+	font-size: 1.4em;
+	
+}
+#contact > .text > p {
+	font-size: 1.0em;
+}
+#contact > .text >.bottom {
+	position: absolute;
+	bottom: 1%;
+	right: 1%;
+	font-size: 1.0em;
+	text-align: center;
 }
 
 .top_text,
