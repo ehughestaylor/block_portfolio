@@ -53,7 +53,7 @@ body{
 	height: 1500px;
 }
 /*iphone*/
-@media only screen and (min-device-width : 375px) and (max-device-width : 667px) {
+/*@media only screen and (min-device-width : 375px) and (max-device-width : 667px) {
 	body{
 		height: 1800px;
 	}
@@ -63,7 +63,7 @@ body{
 	body {
 		height: 2500px;
 	}
-}
+}*/
 	
 div.container{
 	width: 100%;
@@ -350,7 +350,7 @@ div.full{
 	z-index: 1;
 }
 .owl-carousel .item {
-	height: 10rem;
+	height: 12rem;
 	background: #21436C;
 	padding: 1rem;
 }
