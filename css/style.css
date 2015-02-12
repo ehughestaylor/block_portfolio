@@ -48,6 +48,7 @@ table {
 }
 
 /*START*/
+
 body{
 	height: 1500px;
 }
@@ -61,12 +62,9 @@ body{
 @media only screen and (min-device-width : 375px) and (max-device-width : 667px) and (orientation : portrait) {
 	body {
 		height: 2500px;
-		font-size: 1.2em;
 	}
 }
 	
-
-
 div.container{
 	width: 100%;
 	padding: 0;
@@ -332,6 +330,37 @@ TOP STYLESBLOCKS
 /*******************************
 MIDDLE STYLESBLOCKS
 *******************************/
+div.full{
+	width: 100%;
+	/* margin: 0 0; */
+	height: 100%;
+	/* margin-left: 1%; */
+	/* margin-right: -1.9%; */
+	position: absolute;
+	background-color: red;
+	/* background-color: blue; */
+	display: inline-block;
+}
+.owl-carousel {
+	display: none;
+	width: 100%;
+	-webkit-tap-highlight-color: transparent;
+	position: absolute;
+	top: 20%;
+	z-index: 1;
+}
+.owl-carousel .item {
+	height: 10rem;
+	background: #21436C;
+	padding: 1rem;
+}
+
+@media only screen and (min-width: 570px){
+/*	.owl-carousel {
+		position: absolute;
+		top: 15%;
+	}*/
+}
 /*******************************
 BOTTOM STYLES BLOCKS
 *******************************/
@@ -349,6 +378,8 @@ BOTTOM STYLES BLOCKS
 	font-size: 5em;
 	color: white;
 	cursor: pointer;
+	height: 25%;
+	padding-top: 1.2% 0;
 }
 .media ul > li:hover{
 	color: black;
