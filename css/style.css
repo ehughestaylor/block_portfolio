@@ -147,7 +147,13 @@ div.block{
 /*****************************
 BUTTON STYLES AND POSITIONING
 ******************************/
-
+button:hover{
+	background-color: #EB6919;
+	transition-duration: 1s;
+}
+button:focus{
+    outline-style:none;
+}
 .button_front{
 	position: absolute;
 	/* right: 77%; */
@@ -164,6 +170,7 @@ BUTTON STYLES AND POSITIONING
 	left: 1%;
 	background-color: #6C6969;
 	border-radius: 100%;
+	font-size: 2em;
 	height: 130px;
 	width: 130px;
 	color: white;
