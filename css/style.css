@@ -353,12 +353,12 @@ div.full{
 div.overflow {
 	overflow: scroll;
 	height: 100%;
-	width: 100%;
+	width: 80%;
 	margin: 0 auto;
+	background-color: #3872B8;
 }
 .item {
-	background: #21436C;
-	background: #21436C;
+	background: transparent;
 	width: 45%;
 	margin: 0 auto;
 }
@@ -367,8 +367,14 @@ div.overflow {
 	height: auto;
 	padding-bottom: 1em;
 	margin: auto;
-	background: #2668B8;
+	background: transparent;
 	}
+
+@media only screen and (max-width: 600px){
+	.item {
+		width:80%;
+	}
+}
 
 /*******************************
 BOTTOM STYLES BLOCKS
