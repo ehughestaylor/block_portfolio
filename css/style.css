@@ -368,13 +368,6 @@ div.full{
 		margin: 0 auto;
 	}
 
-
-@media only screen and (max-width: 600px){
-
-}
-@media only screen and (max-width: 1000px){
-
-}
 /*******************************
 BOTTOM STYLES BLOCKS
 *******************************/
@@ -449,19 +442,6 @@ div.proj {
 	height: 100%;
 	width: 100%;
 }
-@media only screen and (max-width : 850px) {
-	div.proj {
-		max-height: 30%;
-	}
-	#about_me,
-	#portfolio {
-		padding-top: 20%;
-	}
-}
-
-/*for media query add max-height of 24% for proj*/
-
-
 /*BOTTOM BLOCKS*/
 
 #social{
