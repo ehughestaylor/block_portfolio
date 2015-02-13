@@ -20,28 +20,15 @@ function interestDetail(){
 		$(this).siblings().fadeOut();
 	})
 }
+function iconShake(){
+	$(".icons > li> i").hover(function(){
+		$(this).addClass("animated flip").css("color", "black").one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+			$(this).removeClass("animated flip");
+		});
+	});
+}
 
 $(document).ready(function(){
 	interestDetail();
-	$('.owl-carousel').owlCarousel({
-	    loop:true,
-	    margin:10,
-	    responsiveClass:true,
-	    responsive:{
-	        0:{
-	            items:1,
-	            nav:true
-	        },
-	        600:{
-	            items:2,
-	            nav:false
-	        },
-	        1000:{
-	            items:5,
-	            nav:true,
-	            loop:false
-        }
-    }
-})
-
+	iconShake();
 });

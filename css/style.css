@@ -253,6 +253,7 @@ TOP STYLESBLOCKS
 	width: 20%;
 	display: inline-block;
 	margin-bottom: 0.5em;
+	cursor: pointer;
 }
 
 @media only screen and (max-width : 680px){
