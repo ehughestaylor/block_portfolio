@@ -269,7 +269,7 @@ TOP STYLESBLOCKS
 .buddy{
 	position: absolute;
 	top: 130%;
-	left: 50%;
+	right: 0%;
 	/* top: 100%; */
 	/* background: #6C6969; */
 	padding: 1em;
@@ -282,7 +282,7 @@ TOP STYLESBLOCKS
 	.buddy {
 	font-size: 0.3em;
 	/* transform: rotate(90deg); */
-	left: 70%;
+	right: 0%;
 	top: 143%;
 	position: absolute;
 	}
