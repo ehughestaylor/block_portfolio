@@ -349,6 +349,13 @@ div.full{
 	/* background-color: blue; */
 	display: inline-block;
 }
+
+div.overflow {
+	overflow: scroll;
+	height: 100%;
+}
+
+/*
 .owl-carousel {
 	display: none;
 /*	width: 100%;*/
@@ -356,7 +363,7 @@ div.full{
 	position: absolute;
 /*	top: 20%;*/
 	z-index: 1;
-}
+}*/
 .owl-carousel .owl-item {
 	background: #21436C;
 }
