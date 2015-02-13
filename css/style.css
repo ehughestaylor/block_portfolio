@@ -353,24 +353,21 @@ div.full{
 div.overflow {
 	overflow: scroll;
 	height: 100%;
+	width: 100%;
+	margin: 0 auto;
 }
-
-/*
-.owl-carousel {
-	display: none;
-/*	width: 100%;*/
-	-webkit-tap-highlight-color: transparent;
-	position: absolute;
-/*	top: 20%;*/
-	z-index: 1;
-}*/
-.owl-carousel .owl-item {
+.item {
 	background: #21436C;
+	background: #21436C;
+	width: 45%;
+	margin: 0 auto;
 }
-.owl-carousel .owl-item img {
+.item img {
 	width: 100%;
 	height: auto;
-	margin: 0 auto;
+	padding-bottom: 1em;
+	margin: auto;
+	background: #2668B8;
 	}
 
 /*******************************
