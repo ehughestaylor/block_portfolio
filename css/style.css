@@ -351,6 +351,7 @@ div.full{
 	display: inline-block;
 }
 
+
 div.overflow {
 	overflow: scroll;
 	height: 100%;
@@ -358,23 +359,41 @@ div.overflow {
 	margin: 0 auto;
 	background-color: #3872B8;
 }
+div.item-list{
+	width: 5800px;
+	height: 495px;
+	margin-left: -20em;
+	overflow-x: scroll;
+	overflow-y: hidden;
+}
 .item {
 	background: transparent;
-	width: 45%;
 	margin: 0 auto;
+	display: inline-block;
+	vertical-align: middle;
 }
 .item img {
 	width: 100%;
 	height: auto;
 	padding-bottom: 1em;
+	vertical-align: middle;
 	margin: auto;
 	background: transparent;
 	}
 
 @media only screen and (max-width: 600px){
-	.item {
-		width:80%;
+	div.item-list{
+		width: 100%;
+		overflow-y:scroll; 
+		overflow-x: hidden;
+		margin-left: 0;
 	}
+	.item {
+		padding: 0;
+		margin:0;
+		height: auto;
+	}
+
 }
 
 /*******************************
@@ -426,7 +445,6 @@ BOTTOM STYLES BLOCKS
 	font-size: 1.4em;
 	text-align: center;
 	top: 0%;
-	padding-top: 1%;
 /*	top: 42.7%;*/
 }
 
@@ -523,12 +541,13 @@ div.proj {
 }
 .bottom_text > h1 {
 	position: absolute;
-	font-size: 4.4em;
+	font-size: 2.0em;
 	top: 28.9%;
 	left: 13%;
 }
 
-/*QUERIES */
-
-
-
+@media only screen and (max-width: 600px){
+	.thanks {
+		font-size: 1.0em;
+	}
+	}
